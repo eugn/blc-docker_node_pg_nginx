@@ -57,3 +57,6 @@ docker-compose exec nginx /etc/init.d/nginx restart
 
 * Вся статика в папке `/static`, она будет доступна по `localhost/filename`.
 * Для ноды папка со статикой будет ниже уровнем от `app.js` (главным файлом), на одном уровне с папкой `app`.
+* Для работы с базой данных Sequelize. 
+* разделенные docker-compose.yml позволят Nginx конфиги для production и dev. 
+* Например, в боевую сборку можно добавить образ hub.docker.com/r/gordonchan/auto-letsencrypt/ и открыть 443 порт в nginx для https.
